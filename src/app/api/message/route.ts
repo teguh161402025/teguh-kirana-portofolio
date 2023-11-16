@@ -23,6 +23,19 @@ export async function POST(req: Request, res : Response) {
     ${request.email}</p>`
   }
   
+await new Promise((resolve, reject) => {
+
+    transporter.verify(function (error, success) {
+        if (error) {
+            console.log(error);
+            reject(error);
+        } else {
+            console.log("Server is ready to take our messages");
+            resolve(success);
+        }
+    });
+});
+
 await new Promise((resolve, reject)=>{ 
 transporter.sendMail(mail, function(err, info){
     if(err){
@@ -33,7 +46,8 @@ transporter.sendMail(mail, function(err, info){
       console.log(info)
       resolve(info)
     }
-  });});
+  });
+});
  
   
   console.log(request.message,);

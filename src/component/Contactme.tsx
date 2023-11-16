@@ -21,7 +21,7 @@ const Contactme = () => {
         }
         const currentUrl = window.location.href;
         console.log('Current URL:', currentUrl);
-        fetch('https://teguhkirana.vercel.app/api/message', {
+        fetch('http://localhost:3000/api/message', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json, text/plain, */*',

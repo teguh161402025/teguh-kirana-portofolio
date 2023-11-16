@@ -22,15 +22,19 @@ export async function POST(req: Request, res : Response) {
     html: `<div>${request.message}</div><p>Sent from:
     ${request.email}</p>`
   }
-
-  transporter.sendMail(mail, function(err, info){
+  
+await new Promise((resolve, reject)=>{ 
+transporter.sendMail(mail, function(err, info){
     if(err){
       console.log(err);
+      reject(err)
     }
     else{
       console.log(info)
+      resolve(info)
     }
-  })
+  });});
+ 
   
   console.log(request.message,);
    

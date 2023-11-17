@@ -6,10 +6,10 @@ export async function POST(req: Request, res : Response) {
   const request = await req.json();
   const transporter:  nodemailer.Transporter = nodemailer.createTransport({
     port: 465,
-    host: "smtp.resend.com",
+    host: "smtp.gmail.com",
     auth: {
-      user: 'resend',
-      pass: process.env.password,
+      user: process.env.EMAIL,
+      pass: process.env.PASSWORD,
     },
     secure: true,
   })

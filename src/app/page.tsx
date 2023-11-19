@@ -238,7 +238,7 @@ export default function Home() {
             <div className='p-8 md:mx-8 xl:my-24 mx-6 md:my-12   md:border-r-2 border-r-primary'>
               <AnimateScroll doAfter={300} animation='fade-in-slide-up'>
                 <p className='xl:text-6xl font-bold text-4xl' >Lets See <br /> My project.</p>
-                <p className='text-lg mt-8' >Lets See My Project.</p>
+                <p className='text-lg mt-8 ' >{"Check out some of the projects I've made before."}</p>
               </AnimateScroll>
               <Link href='/Project'>
                 <button className='flex  flex-row border-2 group border-primary bg-secondary xl:mt-24 mt-8 slide-animation p-4 md:p-0 m'>

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import '../globals.css'
 import { FaFacebook, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 import { TfiArrowRight } from "react-icons/tfi";
-import { SiTailwindcss, SiNextdotjs, SiCss3, SiReact, SiJavascript, SiHtml5 } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs, SiCss3, SiReact, SiJavascript, SiHtml5, SiFirebase, SiRedux, SiExpo } from "react-icons/si";
 import SectionIndicator from '@/component/SectionIndicator';
 import AnimateScroll from '@/component/animateScroll';
 import Footer from '@/component/footer';
@@ -194,7 +194,7 @@ export default function Project() {
                     <Image className='object-none lg:object-cover  lg:object-right '
                         src={'/assets/template_project02.webp'}
                         fill
-                        alt='recipe-nook project' />
+                        alt='tripadvisor travel booking tours project' />
 
                     <div className='absolute z-20 lg:bottom-12 p-2 lg:p-0 bottom-0 glass text-secondary lg:p-6 '>
                         <div className='lg:space-y-6 '>
@@ -232,7 +232,7 @@ export default function Project() {
                     <Image className='object-none lg:object-cover  lg:object-right '
                         src={'/assets/template_project03.webp'}
                         fill
-                        alt='recipe-nook project' />
+                        alt='react scroll animation project' />
 
                     <div className='absolute z-20 lg:bottom-12 p-2 lg:p-0 bottom-0 glass text-secondary lg:p-6 '>
                         <div className='lg:space-y-6 '>
@@ -288,7 +288,55 @@ export default function Project() {
                     </div>
                 </AnimateScroll>
             </div>
-            <div id='5' className='bg-primary w-full min-h-screen section'>
+            <div id="5" className='section lg:relative lg:flex lg:flex-row ' >
+                <div className='min-h-screen w-1/2 bg-secondary z-10 hidden lg:block'></div>
+                <div className='min-h-screen w-1/2 bg-primary z-10 hidden lg:block'></div>
+
+                <AnimateScroll animation='slider-x' doAfter={500} className='lg:min-h-screen  lg:w-1/2 lg:absolute  top-0 bg-primary left-0 z-30'>
+                    <div className='text-secondary grid lg:my-36 p-4 lg:p-0 '>
+                        <AnimateScroll doAfter={1500} animation='fade-in-slide-up' >
+                            <p className='xl:text-6xl text-xl font-bold '>Order Food App</p>
+                            <div className='xl:text-md text-sm leading-loose  text-justify mt-4 lg:m-12'>One of the Android-based projects
+                                I have undertaken is the development of an online food ordering application. This application was meticulously
+                                crafted using Expo, built on the foundation of React Native. For the database infrastructure, I opted for Firebase,
+                                a real-time NoSQL database. By harnessing the reliability of Expo,
+                                combined with the Real time data storage of Firebase,
+                                the application delivers a seamless and responsive user experience throughout the online food ordering process.
+                            </div>
+                        </AnimateScroll>
+                        <a className='cursor-pointer slide-animation-black w-44 mt-4 lg:ml-12 group' href='https://github.com/teguh161402025/Aplikasi-Pemesanan-Makanan-dengan-React-Native-Expo' target='_blank' rel='noopener noreferrer'>
+                            <div className='flex justify-between p-2 lg:p-4 border-2 border-secondary group-hover:text-primary transition-colors delay-400 ease-in-out'>
+                                <span className='xl:text-xl'>Visit.</span>
+                                <TfiArrowRight size={24} />
+                            </div>
+                        </a>
+                        <span className='lg:hidden mt-2 '>or</span>
+
+                    </div>
+                </AnimateScroll >
+                <AnimateScroll animation='fade-in' doAfter={1200} className='lg:min-h-screen h-44 lg:w-1/2 lg:right-0 lg:absolute relative lg:top-0 bg-secondary z-20 lg:overflow-hidden  slider-x'>
+                    <Image className='object-none lg:object-cover  lg:object-right '
+                        src={'/assets/template_projects_03.webp'}
+                        fill
+                        alt='react native order food project' />
+
+                    <div className='absolute z-20 lg:top-24 p-2 lg:p-0 lg:right-0 glass text-secondary lg:p-6 '>
+                        <div className='lg:space-y-6 '>
+
+                            <p className='hidden lg:block'>WHAT I USE</p>
+                            <div className=' lg:grid lg:grid-cols-3 flex   gap-2 gap-y-4'>
+                                <div className='lg:p-2  flex justify-center space-x-2 lg:border-x-[1px] border-x-slate-200'> <p className='hidden lg:block'  >Expo</p> <SiExpo size={22} /> </div>
+                                <div className='lg:p-2  flex justify-center space-x-2 lg:border-r-[1px] border-r-slate-200'> <p className='hidden lg:block' >React Native</p>  <SiReact size={22} /> </div>
+                                <div className='lg:p-2  flex justify-center space-x-2 lg:border-r-[1px] border-r-slate-200'> <p className='hidden lg:block' >Fire Base </p> <SiFirebase size={22} /> </div>
+                                <div className='lg:p-2  flex justify-center space-x-2 lg:border-x-[1px] border-x-slate-200'> <p className='hidden lg:block' >Javascript </p> <SiJavascript size={22} /> </div>
+                                <div className='lg:p-2  flex justify-center space-x-2 lg:border-r-[1px] border-r-slate-200'> <p className='hidden lg:block' >Redux</p> <SiRedux size={22} /> </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </AnimateScroll>
+            </div>
+            <div id='6' className='bg-primary w-full min-h-screen section'>
                 <div className='container mx-auto '>
 
                     <Footer />

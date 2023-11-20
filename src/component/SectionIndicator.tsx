@@ -7,9 +7,10 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 import Icon from '../component/fontAwesome';
 import Colors from '../component/Colors';
 interface IndicatorProps {
-    offsets: number;
+    offsets: number,
+    project?: boolean;
 }
-const SectionIndicator: React.FC<IndicatorProps> = ({ offsets }) => {
+const SectionIndicator: React.FC<IndicatorProps> = ({ offsets, project = false }) => {
     const [current, setCurrent] = useState(0)
     const [sideBar, setSideBar] = useState<number[]>([]);
 
@@ -53,7 +54,7 @@ const SectionIndicator: React.FC<IndicatorProps> = ({ offsets }) => {
 
 
     return (
-        <div className='hidden lg:block fixed right-0 bottom-0 xl:p-32 p-20 space-y-6 z-50'>
+        <div className='hidden lg:block fixed right-0 bottom-0 xl:p-32 p-20 space-y-4 z-50'>
 
 
 
@@ -62,7 +63,7 @@ const SectionIndicator: React.FC<IndicatorProps> = ({ offsets }) => {
                     <Icon
                         icon={current == index + 1 ? faSquare : faCircle}
                         size="sm"
-                        color={current == 3 || current == 2 ? Colors.secondary : Colors.primary}
+                        color={project == true ? Colors.secondary : current == 3 || current == 2 ? Colors.secondary : Colors.primary}
                     />
                 </div>
             ))}

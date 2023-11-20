@@ -24,11 +24,12 @@ export default function Project() {
 
                 <div className=' md:flex md:flex-row-reverse bg-primary md:bg-transparent  '>
                     <div className='bg-primary container mx-auto md:min-h-screen md:w-1/3 relative '>
-
-                        <div className='xl:text-8xl text-4xl font-extrabold lg:mt-32 lg:pt-0 lg:pb-0 pb-2 pt-24
+                        <AnimateScroll doAfter={100} animation='slider-left'>
+                            <div className='xl:text-8xl text-4xl font-extrabold lg:mt-32 lg:pt-0 lg:pb-0 pb-2 pt-24
                           text-secondary lg:-translate-x-4 lg:text-left '>
-                            <p>MY<br className='hidden lg:block' />PROJECT.</p>
-                        </div>
+                                <p>MY<br className='hidden lg:block' />PROJECT.</p>
+                            </div>
+                        </AnimateScroll>
                         <Image className='text-secondary absolute bottom-12 ml-12 right-12 hidden lg:block'
                             src={'/assets/ooorganize-white.svg'}
                             alt={'ornament portofolio'}
@@ -41,19 +42,21 @@ export default function Project() {
 
 
                         <div className='xl:pl-24 pt-8 xl:self-end md:mt-32 p-8 xl:mr-32 xl:mt-44 '>
-                            <p className='xl:text-6xl text-2xl font-bold text-ornament lg:text-left text-center'>
-                                HEY I AM
-                            </p>
-                            <p className='xl:text-7xl text-3xl font-bold text-primary lg:text-left text-center'>
-                                TEGUH KIRANA.
-                            </p>
-                            <p className='w-68 text-primary xl:text-xl text-lg mt-6 lg:text-justify text-center lg:w-2/3 ' >
+                            <AnimateScroll doAfter={300} animation='fade-in-slide-up' className='opacity-0'>
+                                <p className='xl:text-6xl text-2xl font-bold text-ornament lg:text-left text-center'>
+                                    HEY I AM
+                                </p>
+                                <p className='xl:text-7xl text-3xl font-bold text-primary lg:text-left text-center'>
+                                    TEGUH KIRANA.
+                                </p>
+                                <p className='w-68 text-primary xl:text-xl text-lg mt-6 lg:text-justify text-center lg:w-2/3 ' >
 
-                                I have successfully completed several projects in the past, each serving as a testament to my skills and capabilities.
-                                These projects not only showcase my abilities but also exemplify my dedication to delivering good results.
+                                    I have successfully completed several projects in the past, each serving as a testament to my skills and capabilities.
+                                    These projects not only showcase my abilities but also exemplify my dedication to delivering good results.
 
 
-                            </p>
+                                </p>
+                            </AnimateScroll>
                             < div className='lg:flex  p-2 space-x-6 cursor-pointer text-primary mt-24 hidden lg:block'>
                                 <a href='https://www.facebook.com/teguhkiranaberutu/' title='facebook' target='_blank' rel='noopener noreferrer'>
                                     <FaFacebook className='animate-bounce cursor-pointer' size={44} /></a>
@@ -91,7 +94,7 @@ export default function Project() {
                 />
 
             </div>
-            < SectionIndicator offsets={4} />
+            < SectionIndicator offsets={5} project={true} />
 
             <div id="2" className='section lg:relative lg:flex lg:flex-row ' >
                 <div className='min-h-screen w-2/3 bg-secondary z-10 hidden lg:block'></div>
@@ -288,7 +291,7 @@ export default function Project() {
                     </div>
                 </AnimateScroll>
             </div>
-            <div id="5" className='section lg:relative lg:flex lg:flex-row ' >
+            <div id="5" className='section lg:relative flex lg:flex-row flex-col-reverse ' >
                 <div className='min-h-screen w-1/2 bg-secondary z-10 hidden lg:block'></div>
                 <div className='min-h-screen w-1/2 bg-primary z-10 hidden lg:block'></div>
 
@@ -310,7 +313,7 @@ export default function Project() {
                                 <TfiArrowRight size={24} />
                             </div>
                         </a>
-                        <span className='lg:hidden mt-2 '>or</span>
+
 
                     </div>
                 </AnimateScroll >

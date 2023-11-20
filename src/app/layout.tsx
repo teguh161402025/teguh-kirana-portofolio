@@ -3,7 +3,7 @@ import { Montserrat } from 'next/font/google'
 import React from 'react';
 import Head from 'next/head';
 import Navigation from '../component/Navigation';
-import Footer from '@/component/footer';
+
 
 const monserrat = Montserrat({ subsets: ['latin'] })
 const links = [
@@ -13,8 +13,15 @@ const links = [
   { href: '/Contact', label: 'Contact' }
 ]
 export const metadata = {
-  title: 'Teguh Kirana Berutu',
-  description: 'My Portofolio',
+  title: "Teguh Kirana Berutu",
+  description: "Explore the portfolio of Teguh Kirana, a passionate web developer skilled in React and Full Stack development.",
+  siteUrl: "https://teguhkirana.vercel.app",
+  keywords: ["web development", "React", "Full Stack", "portfolio", "frontend", "backend", "JavaScript"],
+  author: "Your Name",
+  socialMedia: {
+    github: "teguh161402025",
+    linkedin: "teguhkiranaberutu"
+  },
 }
 
 export default function RootLayout({

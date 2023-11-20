@@ -56,13 +56,13 @@ const Contactme = () => {
                                 <span className='after:content-["*"] after:text-red-500 block text-primary  font-medium lg:text-xl '>
                                     Name
                                 </span>
-                                <input onChange={(e) => { setName(e.target.value) }} name='name' type="text" className=' py-4 text-primary border-b-2 border-slate-400 focus:border-primary  focus:outline-none' placeholder='Enter Your Name' ></input>
+                                <input onChange={(e) => { setName(e.target.value) }} name='name' type="text" className=' py-4 text-primary border-b-2 border-slate-400 focus:border-primary w-full  focus:outline-none' placeholder='Enter Your Name' ></input>
                             </div>
                             <div>
                                 <span className='after:content-["*"] after:text-red-500 block text-primary  font-medium xl:text-xl '>
                                     Email
                                 </span>
-                                <input onChange={(e) => { setEmail(e.target.value) }} name='email' type="email" className=' py-4 text-primary border-b-2 border-slate-400 focus:border-primary  focus:outline-none' placeholder='Enter Your Email Address' ></input>
+                                <input onChange={(e) => { setEmail(e.target.value) }} name='email' type="email" className=' py-4 text-primary border-b-2 border-slate-400 focus:border-primary w-full focus:outline-none' placeholder='Enter Your Email Address' ></input>
                             </div>
                         </div>
 

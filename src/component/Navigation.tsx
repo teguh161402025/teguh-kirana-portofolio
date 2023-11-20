@@ -76,7 +76,7 @@ const Navigation: React.FC<NavigationProps> = ({ links }) => {
             {
                 pathname === '/Project' &&
                 <div className='hidden lg:flex flex-row justify-between fixed lg:z-50 w-full xl:p-8 p-4 '>
-                    <div className={`md:text-2xl font-bold`}>
+                    <div onClick={() => handleClick('/')} className={`md:text-2xl font-bold cursor-pointer`}>
 
                         {
 
@@ -124,7 +124,7 @@ const Navigation: React.FC<NavigationProps> = ({ links }) => {
             }
 
             <div className={`hidden lg:flex flex-row justify-between fixed lg:z-50 w-full xl:p-8 p-4 ${pathname == '/Project' ? 'lg:hidden' : ''}`} >
-                <div className={`md:text-2xl font-bold`}>
+                <div onClick={() => handleClick('/')} className={`md:text-2xl font-bold cursor-pointer`}>
 
                     {
 
@@ -171,7 +171,7 @@ const Navigation: React.FC<NavigationProps> = ({ links }) => {
 
             </div>
             <div className='lg:hidden flex flex-row justify-between fixed z-40 w-full p-4 bg-white shadow-sm'>
-                <div className='text-2xl font-bold '> {
+                <div onClick={() => handleClick('/')} className='text-2xl font-bold cursor-pointer '> {
 
                     section != 1 ? (
 
@@ -200,7 +200,7 @@ const Navigation: React.FC<NavigationProps> = ({ links }) => {
             {
                 navmenu == true &&
                 <div className={`${navmenu == true ? 'slidenav' : 'slidenavclose'} min-h-screen bg-white w-full fixed overscroll-y-none z-50`}>
-                    <div className='flex flex-row justify-between w-full p-4'>
+                    <div onClick={() => handleClick('/')} className='flex flex-row justify-between w-full p-4 cursor-pointer'>
                         <div className='text-2xl font-bold '> {
 
                             section != 1 ? (

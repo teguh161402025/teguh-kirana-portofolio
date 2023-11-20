@@ -170,7 +170,7 @@ export default function Home() {
       <div id='2' className='w-full bg-secondary lg:min-h-screen section relative lg:flex mt-12 lg:mt-0'>
         <div className='min-h-screen w-2/3 bg-primary z-10 hidden lg:block'></div>
         <div className='min-h-screen w-1/3 bg-secondary z-10 hidden lg:block'></div>
-        <AnimateScroll doAfter={500} className='lg:min-h-screen lg:w-2/3 lg:bg-secondary bg-primary lg:absolute lg:top-0 lg:left-0 lg:z-20  container mx-auto ' animation='slider-x'>
+        <AnimateScroll doAfter={500} className='lg:min-h-screen lg:w-2/3 lg:bg-secondary hidden lg:block bg-primary lg:absolute lg:top-0 lg:left-0 lg:z-20  container mx-auto ' animation='slider-x'>
           <div className=''>
 
             <div className='lg:mt-24 lg:p-8 space-y-16 '>
@@ -207,7 +207,45 @@ export default function Home() {
             />
           </div>
         </AnimateScroll>
-        <AnimateScroll doAfter={1200} className='lg:min-h-screen lg:w-1/2 lg:bg-primary bg-secondary lg:absolute top-0 right-0 z-20  container mx-auto' animation='slider-x'>
+        <div className='lg:min-h-screen lg:w-2/3 lg:bg-secondary lg:hidden bg-primary lg:absolute lg:top-0 lg:left-0 lg:z-20  container mx-auto '>
+          <div>
+            <div className='lg:mt-24 lg:p-8 space-y-16 '>
+              <AnimateScroll doAfter={300} animation='fade-in-slide-up'>
+                <div className='lg:w-2/3 lg:p-4 p-6'>
+                  <p className='xl:text-6xl text-3xl lg:text-primary text-secondary leading-loose font-bold'>Front-End.</p>
+                  <p className=' lg:text-primary text-secondary leading-loose lg:text-lg text-sm space-y-4 text-justify lg:mt-8 lg:p-2'>
+                    I have a great interest in front-end development.
+                    I enjoy creating interactiveand innovative web
+                    interfaces thatremain user-friendly. I have a
+                    penchant  for simple and modern designs.
+                    Throughout my development journey,
+                    I frequently utilize JavaScript and its supporting
+                    tools to enhance my projects.</p>
+                </div>
+              </AnimateScroll>
+              <div className='grid content-center -translate-y-12 -translate-x-4 lg:translate-x-0 lg:translate-y-0'>
+                <div className='bg-primary h-10 rounded-r-3xl text-primary cursor-pointer overflow-hidden group  hover:text-secondary lg:w-2/3 flex  flex-row border-2 border-primary justify-between px-6 slide-animation'>
+                  <Link href='/About'><div className='p-2 '>Hey, wanna know more about me? Lets go !!!
+                  </div></Link>
+                  <TfiArrowRight className=' transition-transform delay-800 bouncing-x  m-2 ' size={24} />
+
+                </div>
+              </div>
+
+            </div>
+
+            <Image className='absolute bottom-6 left-12 hidden lg:block'
+              src={'/assets/ooorganize.svg'}
+              alt={'ornament portofolio'}
+              width={150}
+              height={150}
+
+            />
+          </div>
+        </div>
+
+
+        <AnimateScroll doAfter={1200} className='lg:min-h-screen lg:w-1/2 lg:bg-primary hidden lg:block bg-secondary lg:absolute top-0 right-0 z-20  container mx-auto' animation='slider-x'>
           <div className=''>
 
             <Image className='text-secondary absolute top-32 right-12 hidden lg:block'
@@ -234,6 +272,34 @@ export default function Home() {
 
           </div>
         </AnimateScroll>
+        <div className='lg:min-h-screen lg:w-1/2 lg:bg-primary lg:hidden bg-secondary lg:absolute top-0 right-0 z-20  container mx-auto'>
+          <div>
+
+            <Image className='text-secondary absolute top-32 right-12 hidden lg:block'
+              src={'/assets/ooorganize-white.svg'}
+              alt={'ornament portofolio'}
+              width={200}
+              height={200}
+
+            />
+            <div className='lg:absolute bottom-12 lg:ml-12'>
+              <AnimateScroll doAfter={300} animation='fade-in-slide-up'>
+                <div className='lg:w-2/3 text-justify lg:p-2 p-4'>
+                  <p className='xl:text-6xl text-3xl lg:text-secondary text-primary font-bold'>Back-End.</p>
+                  <p className='lg:text-secondary text-sm text-primary lg:text-lg  space-y-4 lg:mt-8 mt-4 p-2 leading-loose'>
+                    I am also proficient in web-service development using Node.
+                    js and its supporting tools to deliver REST API, process data,
+                    and handle SQL as well as NoSQL database management.
+                    With Node.js, I can efficiently build and deploy RESTful APIs
+                    that enable seamless communication between client-side
+                    and server-side applications.</p>
+                </div>
+              </AnimateScroll>
+
+            </div>
+
+          </div>
+        </div>
       </div>
       <div id='3' className='lg:min-h-screen bg-primary w-full section lg:py-0 py-4'>
         <div className='container mx-auto lg:w-3/4 xl:mt-24 mt-12 w-full flex justify-center lg:block '>

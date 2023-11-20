@@ -7,7 +7,7 @@ import AnimateScroll from './animateScroll';
 import Link from 'next/link';
 const Footer = () => {
     return (
-        <div className='lg:fullpage-container h-screen  w-full bg-primary text-secondary p-8 xl:p-36'>
+        <div className='lg:fullpage-container min-h-screen  w-full bg-primary text-secondary p-8 xl:p-36'>
             <div className='lg:text-2xl space-y-8 w-full py-24 lg:py-24'>
                 <AnimateScroll doAfter={300} animation='fade-in-slide-up'> <p>MY CONTACT</p></AnimateScroll>
                 <AnimateScroll doAfter={600} animation='fade-in-slide-up'>
@@ -35,7 +35,7 @@ const Footer = () => {
                     </div>
                 </AnimateScroll>
                 <AnimateScroll doAfter={900} animation='fade-in-slide-up'>
-                    <div className='translate-y-32 py-12 border-t-2 border-t-secondary w-full'>
+                    <div className='translate-y-24 py-12 border-t-2 border-t-secondary w-full'>
                         <div className='w-full flex lg:flex-row-reverse justify-between'>
                             <div className='text-lg'>© Teguh Kirana Berutu 2023</div>
                             <div className='lg:flex flex-row space-x-4  hidden'>

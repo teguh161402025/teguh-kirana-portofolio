@@ -293,7 +293,7 @@ export default function Home() {
       </div>
 
       <div id='5' className='bg-primary w-full min-h-screen section'>
-        <div className='container mx-auto '>
+        <div className='lg:container lg:mx-auto '>
 
           <Footer />
         </div>

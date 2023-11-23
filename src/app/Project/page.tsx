@@ -168,7 +168,7 @@ export default function Project() {
                 <div className='min-h-screen w-1/2 bg-primary z-10 hidden lg:block'></div>
 
                 <AnimateScroll animation='slider-x' doAfter={500} className='lg:min-h-screen  lg:w-1/2 lg:absolute  top-0 bg-primary left-0 z-30'>
-                    <div className='text-secondary grid lg:my-36 p-4 lg:p-0 '>
+                    <div className='text-secondary grid lg:my-36 p-4 lg:pl-10 '>
                         <AnimateScroll doAfter={1500} animation='fade-in-slide-up' >
                             <p className='xl:text-6xl text-xl font-bold '>Tripadvisor</p>
                             <div className='xl:text-md text-sm leading-loose  text-justify mt-4 lg:m-12'>Tripadvisor is a template designed for online travel reservations.In this template, I have incorporated a simple yet informative design to ensure a user-friendly experience.Additionally, I have integrated features that provide valuable information,
@@ -296,7 +296,7 @@ export default function Project() {
                 <div className='min-h-screen w-1/2 bg-primary z-10 hidden lg:block'></div>
 
                 <AnimateScroll animation='slider-x' doAfter={500} className='lg:min-h-screen  lg:w-1/2 lg:absolute  top-0 bg-primary left-0 z-30'>
-                    <div className='text-secondary grid lg:my-36 p-4 lg:p-0 '>
+                    <div className='text-secondary grid lg:my-36 p-4 lg:pl-10 '>
                         <AnimateScroll doAfter={1500} animation='fade-in-slide-up' >
                             <p className='xl:text-6xl text-xl font-bold '>Order Food App</p>
                             <div className='xl:text-md text-sm leading-loose  text-justify mt-4 lg:m-12'>One of the Android-based projects

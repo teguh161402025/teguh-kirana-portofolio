@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { faCircle, } from '@fortawesome/free-solid-svg-icons';
 import { faSquare } from '@fortawesome/free-regular-svg-icons';
-import { TfiControlStop } from "react-icons/tfi";
+import { RiSquareLine, RiCircleFill } from "react-icons/ri";
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import Icon from '../component/fontAwesome';
 import Colors from '../component/Colors';
@@ -54,17 +54,21 @@ const SectionIndicator: React.FC<IndicatorProps> = ({ offsets, project = false }
 
 
     return (
-        <div className='hidden lg:block fixed right-0 bottom-0 xl:p-32 p-20 space-y-4 z-50'>
+        <div className={`hidden lg:block fixed right-0 bottom-0 xl:p-32 p-20 ${project == true ? 'space-y-4' : 'space-y-6'} z-50`}>
 
 
 
             {sideBar.map((a, index) => (
-                <div key={index} className={`icon-container ${current == index + 1 ? 'active' : ''}`}>
-                    <Icon
-                        icon={current == index + 1 ? faSquare : faCircle}
-                        size="sm"
-                        color={project == true ? Colors.secondary : current == 3 || current == 2 ? Colors.secondary : Colors.primary}
-                    />
+                <div key={index} className={`icon-container ${current == index + 1 ? 'active' : ''} ${project == true ? current == offsets + 1 ? 'text-primary' : 'text-secondary' : current == 3 || current == 2 ? 'text-secondary' : 'text-primary'}`}>
+                    {
+
+                        current == index + 1 ?
+                            <RiSquareLine size={18} />
+                            :
+                            <RiCircleFill size={18} />
+                    }
+
+
                 </div>
             ))}
 

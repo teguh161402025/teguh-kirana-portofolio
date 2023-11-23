@@ -8,7 +8,7 @@ import Link from 'next/link';
 const Footer = () => {
     return (
         <div className='lg:fullpage-container min-h-screen  w-full bg-primary text-secondary p-8 xl:p-36'>
-            <div className='lg:text-2xl space-y-8 w-full py-24 lg:py-24'>
+            <div className='lg:text-2xl space-y-8 w-full py-24 lg:py-0'>
                 <AnimateScroll doAfter={300} animation='fade-in-slide-up'> <p>MY CONTACT</p></AnimateScroll>
                 <AnimateScroll doAfter={600} animation='fade-in-slide-up'>
                     <div className='lg:w-2/3 xl:w-1/2 lg:flex flex-row justify-between mt-16 space-y-8 lg:space-y-0 mb-24'>

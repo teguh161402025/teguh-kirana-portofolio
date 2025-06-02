@@ -37,7 +37,7 @@ const Footer = () => {
                 <AnimateScroll doAfter={900} animation='fade-in-slide-up'>
                     <div className='translate-y-24 py-12 border-t-2 border-t-secondary w-full'>
                         <div className='w-full flex lg:flex-row-reverse justify-between'>
-                            <div className='text-lg'>© Teguh Kirana Berutu 2023</div>
+                            <div className='text-lg'>© Teguh Kirana Berutu 2025</div>
                             <div className='lg:flex flex-row space-x-4  hidden'>
 
                                 <a href='https://www.facebook.com/teguhkiranaberutu/' title='facebook' target='_blank' rel='noopener noreferrer'>

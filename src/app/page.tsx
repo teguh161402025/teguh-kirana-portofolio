@@ -25,7 +25,7 @@ export default function Home() {
 
       <div id='1' className='lg:absolute w-full section'>
         <div className='lg:container lg:mx-auto  lg:flex lg:flex-row '>
-          <div className='bg-primary lg:min-h-screen lg:w-2/3 w-full relative'>
+          <div className='bg-primary lg:min-h-screen h-screen lg:w-2/3 w-full relative'>
 
 
             <div className='md:pl-24 md:pt-32 self-end lg:pt-24 xl:pt-12 pt-24 px-12 lg:mt-44 relative'>
@@ -33,7 +33,7 @@ export default function Home() {
                 <p className='xl:text-6xl text-4xl font-bold text-ornament text-center lg:text-left '>
                   HEY I AM
                 </p>
-                <p className='xl:text-7xl text-4xl font-bold text-secondary text-center lg:text-left'>
+                <p className='xl:text-7xl md:text-2xl text-4xl font-bold text-secondary text-center lg:text-left'>
                   TEGUH KIRANA.
                 </p>
 

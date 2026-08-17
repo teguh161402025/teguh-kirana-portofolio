@@ -2,7 +2,7 @@ import nodemailer from 'nodemailer';
 import { NextResponse } from 'next/server';
 
 
-export async function POST(req: Request, res : Response) {
+export async function POST(req: Request) {
   const request = await req.json();
   const transporter:  nodemailer.Transporter = nodemailer.createTransport({
     port: 465,
@@ -52,8 +52,6 @@ transporter.sendMail(mail, function(err, info){
   
   console.log(request.message,);
    
- return NextResponse.json(
-   req.body
- );
+ return NextResponse.json({ message: 'Message sent successfully' });
 
 }

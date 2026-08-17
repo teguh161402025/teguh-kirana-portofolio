@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from 'react'
 import Image from 'next/image'
 import '../globals.css';
@@ -21,7 +22,7 @@ export default function About() {
                 <div className=' md:flex md:flex-row bg-primary md:bg-transparent  '>
                     <div className='bg-primary container mx-auto md:min-h-screen md:w-1/3 relative '>
                         <AnimateScroll doAfter={100} animation='slider-x'>
-                            <div className='xl:text-9xl text-4xl font-extrabold lg:mt-32 lg:pt-0 lg:pb-0 pb-2 pt-24  text-secondary translate-x-4 lg:text-right '>
+                            <div className='xl:text-9xl lg:text-7xl text-4xl font-extrabold lg:mt-32 lg:pt-0 lg:pb-0 pb-2 pt-24  text-secondary translate-x-4 lg:text-right '>
                                 <p>ABOUT<br className='hidden lg:block' />ME.</p>
                             </div>
                         </AnimateScroll>
@@ -38,10 +39,10 @@ export default function About() {
 
                         <div className='xl:pl-24 pt-8 xl:self-end md:mt-32 p-8 xl:mr-32 xl:mt-56 '>
                             <AnimateScroll doAfter={300} animation='fade-in-slide-up' className='opacity-0'>
-                                <p className='xl:text-6xl text-2xl font-bold text-ornament lg:text-left text-center'>
+                                <p className='xl:text-6xl lg:text-4xl text-2xl font-bold text-ornament lg:text-left text-center'>
                                     HEY I AM
                                 </p>
-                                <p className='xl:text-7xl text-3xl font-bold text-primary lg:text-left text-center'>
+                                <p className='xl:text-7xl lg:text-5xl text-3xl font-bold text-primary lg:text-left text-center'>
                                     TEGUH KIRANA.
                                 </p>
                                 <p className='w-68 text-primary xl:text-xl text-lg mt-6 lg:text-justify text-center lg:w-2/3 ' >
@@ -81,7 +82,7 @@ export default function About() {
 
 
                 </div>
-                <Image className='absolute right-12 top-32 z-30 hidden lg:block'
+                <Image className='absolute right-8 xl:right-12 top-32 z-30 hidden lg:block lg:w-40 xl:w-[220px] h-auto'
                     src="assets/ooorganize.svg"
                     alt="high school"
                     width={220}

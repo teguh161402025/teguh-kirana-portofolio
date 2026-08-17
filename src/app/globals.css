@@ -36,6 +36,73 @@ body {
 html {
   scroll-behavior: smooth;
 }
+body {
+  transform-origin: top left;
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  body {
+    zoom: 0.78;
+    width: 128.205vw;
+    min-height: 128.205vh;
+  }
+
+  main.fullpage-container,
+  main[class*="fullpage-container"],
+  .h-screen {
+    height: 128.205vh !important;
+  }
+
+  main.fullpage-container > .section,
+  main[class*="fullpage-container"] > .section,
+  .min-h-screen {
+    min-height: 128.205vh !important;
+  }
+
+  .section,
+  .section .h-screen,
+  .section .min-h-screen,
+  .section .md\:min-h-screen,
+  .section .lg\:min-h-screen {
+    min-height: 128.205vh !important;
+  }
+
+  .section .h-screen {
+    height: 128.205vh !important;
+  }
+}
+
+@media (min-width: 1367px) and (max-width: 1536px) and (max-height: 900px) {
+  body {
+    zoom: 0.86;
+    width: 116.279vw;
+    min-height: 116.279vh;
+  }
+
+  main.fullpage-container,
+  main[class*="fullpage-container"],
+  .h-screen {
+    height: 116.279vh !important;
+  }
+
+  main.fullpage-container > .section,
+  main[class*="fullpage-container"] > .section,
+  .min-h-screen {
+    min-height: 116.279vh !important;
+  }
+
+  .section,
+  .section .h-screen,
+  .section .min-h-screen,
+  .section .md\:min-h-screen,
+  .section .lg\:min-h-screen {
+    min-height: 116.279vh !important;
+  }
+
+  .section .h-screen {
+    height: 116.279vh !important;
+  }
+}
 ::-webkit-scrollbar {
   display: none;
 }
@@ -199,6 +266,7 @@ html {
   background-position: -100% 0;
 }
 .section {
+  min-height: 100vh;
   scroll-snap-align: center;
 }
 
@@ -233,6 +301,16 @@ html {
     -ms-overflow-style: none;
     scrollbar-width: none;
     scroll-behavior: smooth;
+  }
+}
+
+@media (min-width: 1024px) and (max-height: 820px) {
+  .fullpage-container {
+    scroll-snap-type: y proximity;
+  }
+
+  .section {
+    scroll-snap-align: start;
   }
 }
 

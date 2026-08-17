@@ -25,7 +25,7 @@ export default function Project() {
                 <div className=' md:flex md:flex-row-reverse bg-primary md:bg-transparent  '>
                     <div className='bg-primary container mx-auto md:min-h-screen md:w-1/3 relative '>
                         <AnimateScroll doAfter={100} animation='slider-left'>
-                            <div className='xl:text-8xl text-4xl font-extrabold lg:mt-32 lg:pt-0 lg:pb-0 pb-2 pt-24
+                            <div className='xl:text-8xl lg:text-7xl text-4xl font-extrabold lg:mt-32 lg:pt-0 lg:pb-0 pb-2 pt-24
                           text-secondary lg:-translate-x-4 lg:text-left '>
                                 <p>MY<br className='hidden lg:block' />PROJECT.</p>
                             </div>
@@ -43,10 +43,10 @@ export default function Project() {
 
                         <div className='xl:pl-24 pt-8 xl:self-end md:mt-32 p-8 xl:mr-32 xl:mt-44 '>
                             <AnimateScroll doAfter={300} animation='fade-in-slide-up' className='opacity-0'>
-                                <p className='xl:text-6xl text-2xl font-bold text-ornament lg:text-left text-center'>
+                                <p className='xl:text-6xl lg:text-4xl text-2xl font-bold text-ornament lg:text-left text-center'>
                                     HEY I AM
                                 </p>
-                                <p className='xl:text-7xl text-3xl font-bold text-primary lg:text-left text-center'>
+                                <p className='xl:text-7xl lg:text-5xl text-3xl font-bold text-primary lg:text-left text-center'>
                                     TEGUH KIRANA.
                                 </p>
                                 <p className='w-68 text-primary xl:text-xl text-lg mt-6 lg:text-justify text-center lg:w-2/3 ' >
@@ -133,10 +133,10 @@ export default function Project() {
 
                 </AnimateScroll>
                 <AnimateScroll doAfter={400} animation='slider-x' className='lg:min-h-screen  lg:w-1/2 lg:absolute  top-0 bg-primary right-0 z-30 '>
-                    <div className='text-secondary grid lg:my-36 p-4 lg:p-0 '>
+                    <div className='text-secondary grid lg:my-24 xl:my-36 p-4 lg:p-0 '>
                         <AnimateScroll doAfter={1600} animation='fade-in-slide-up'>
-                            <p className='xl:text-6xl text-xl font-bold '>RecipeNook</p>
-                            <div className='xl:text-md text-sm leading-loose  text-justify mt-4 lg:m-12'>Recipe Nook is a food recipe search website where you can effortlessly discover recipes based on the ingredients available in your kitchen.
+                            <p className='xl:text-6xl lg:text-4xl text-xl font-bold '>RecipeNook</p>
+                            <div className='xl:text-md text-sm leading-loose  text-justify mt-4 lg:m-8 xl:m-12'>Recipe Nook is a food recipe search website where you can effortlessly discover recipes based on the ingredients available in your kitchen.
                                 Simply input the items you have at home, and uncover a diverse array of culinary delights.
                                 Not only does Recipe Nook consider the ingredients on hand, but it also allows you to explore recipes tailored to your dietary preferences. The platform is equipped with comprehensive filters to help you find recipes that align with your desires
                                 This platform utilizes the Edamame API to offer a diverse recipe database.
@@ -168,10 +168,10 @@ export default function Project() {
                 <div className='min-h-screen w-1/2 bg-primary z-10 hidden lg:block'></div>
 
                 <AnimateScroll animation='slider-x' doAfter={500} className='lg:min-h-screen  lg:w-1/2 lg:absolute  top-0 bg-primary left-0 z-30'>
-                    <div className='text-secondary grid lg:my-36 p-4 lg:pl-10 '>
+                    <div className='text-secondary grid lg:my-24 xl:my-36 p-4 lg:pl-10 '>
                         <AnimateScroll doAfter={1500} animation='fade-in-slide-up' >
-                            <p className='xl:text-6xl text-xl font-bold '>Tripadvisor</p>
-                            <div className='xl:text-md text-sm leading-loose  text-justify mt-4 lg:m-12'>Tripadvisor is a template designed for online travel reservations.In this template, I have incorporated a simple yet informative design to ensure a user-friendly experience.Additionally, I have integrated features that provide valuable information,
+                            <p className='xl:text-6xl lg:text-4xl text-xl font-bold '>Tripadvisor</p>
+                            <div className='xl:text-md text-sm leading-loose  text-justify mt-4 lg:m-8 xl:m-12'>Tripadvisor is a template designed for online travel reservations.In this template, I have incorporated a simple yet informative design to ensure a user-friendly experience.Additionally, I have integrated features that provide valuable information,
                                 making it a comprehensive platform for users.
                             </div>
                         </AnimateScroll>
@@ -262,10 +262,10 @@ export default function Project() {
                     </div>
                 </AnimateScroll>
                 <AnimateScroll doAfter={500} animation='slider-left' className='lg:min-h-screen  lg:w-1/2 lg:absolute  top-0 bg-primary right-0 z-30 slider-x'>
-                    <div className='text-secondary grid lg:my-36 p-4 lg:p-0 '>
+                    <div className='text-secondary grid lg:my-24 xl:my-36 p-4 lg:p-0 '>
                         <AnimateScroll doAfter={1500} animation='fade-in-slide-up' >
-                            <p className='xl:text-6xl text-xl font-bold '>React Animation Scroll</p>
-                            <div className='xl:text-md text-sm leading-loose  text-justify mt-4 lg:m-12'>react-animation-scroll is an
+                            <p className='xl:text-6xl lg:text-4xl text-xl font-bold '>React Animation Scroll</p>
+                            <div className='xl:text-md text-sm leading-loose  text-justify mt-4 lg:m-8 xl:m-12'>react-animation-scroll is an
                                 npm package designed to implement animations when scrolling.
                                 It utilizes the Observer API to achieve this effect. The demo showcases
                                 various animations that can be applied. Over time, I intend to further develop and expand this npm
@@ -296,10 +296,10 @@ export default function Project() {
                 <div className='min-h-screen w-1/2 bg-primary z-10 hidden lg:block'></div>
 
                 <AnimateScroll animation='slider-x' doAfter={500} className='lg:min-h-screen  lg:w-1/2 lg:absolute  top-0 bg-primary left-0 z-30'>
-                    <div className='text-secondary grid lg:my-36 p-4 lg:pl-10 '>
+                    <div className='text-secondary grid lg:my-24 xl:my-36 p-4 lg:pl-10 '>
                         <AnimateScroll doAfter={1500} animation='fade-in-slide-up' >
-                            <p className='xl:text-6xl text-xl font-bold '>Order Food App</p>
-                            <div className='xl:text-md text-sm leading-loose  text-justify mt-4 lg:m-12'>One of the Android-based projects
+                            <p className='xl:text-6xl lg:text-4xl text-xl font-bold '>Order Food App</p>
+                            <div className='xl:text-md text-sm leading-loose  text-justify mt-4 lg:m-8 xl:m-12'>One of the Android-based projects
                                 I have undertaken is the development of an online food ordering application. This application was meticulously
                                 crafted using Expo, built on the foundation of React Native. For the database infrastructure, I opted for Firebase,
                                 a real-time NoSQL database. By harnessing the reliability of Expo,

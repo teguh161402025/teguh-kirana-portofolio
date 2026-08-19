@@ -22,12 +22,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: var(--primary-color);
 }
 
 .animate-bounce:hover {
@@ -35,6 +30,7 @@ body {
 }
 html {
   scroll-behavior: smooth;
+  background: var(--primary-color);
 }
 body {
   transform-origin: top left;
@@ -267,7 +263,15 @@ body {
 }
 .section {
   min-height: 100vh;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
+}
+
+@media (min-width: 1024px) {
+  .section {
+    height: 100vh;
+    overflow: hidden;
+    scroll-snap-stop: always;
+  }
 }
 
 .slide-animation-black {
